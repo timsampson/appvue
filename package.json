@@ -1,0 +1,30 @@
+{
+    "name": "clasp-vue",
+    "version": "1.0.0",
+    "description": "Google Apps Script Web Site Template with Vue and Parcel for build and deploy.",
+    "main": "build/index.html",
+    "scripts": {
+        "bld": "node clean.js && parcel build client/index.html --no-minify --no-source-maps --no-cache && node util.js && clasp push && node clean.js"
+    },
+    "devDependencies": {
+        "@types/google-apps-script": "1.0.14",
+        "typescript": "3.8.2",
+        "node-forge": "^0.10.0",
+        "parcel": "^2.0.0-nightly.420",
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-inliner": "^1.0.14"
+    },
+    "keywords": [
+        "AppScript",
+        "Web",
+        "V8",
+        "Vue"
+    ],
+    "author": "Tim Sampson",
+    "license": "MIT",
+    "repository": "https://github.com/timsampson/appvue",
+    "private": true,
+    "dependencies": {
+        "inquirer": "^6.5.2"
+    }
+}
